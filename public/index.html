@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="full-viewport">
+            <div class="chat-window glassmorphism">
+                <div class="chat-title">
+                    <div class="chat-title-avatar">
+                        <img src="https://acropolium.com/img/articles/find-backend-developers/img01.jpg" alt="profile-picture">
+                    </div>
+                    <div>
+                        <span class="chat-title-name">Online chat</span>
+                        <div class="chat-title-status">
+                            <div class="chat-title-status-circle"></div>
+                            <p class="chat-title-status-text"></p>
+                        </div>
+                    </div>
+                    <h3 style="margin-left: 130px;" class="typing"></h3>
+
+                </div>
+
+                <div class="chat-messages" id="chat-messages">
+                </div>
+
+                <div class="chat-input">
+                    <form style="width:400px;" class="message-form">
+                        <input type="text" class="input" id="message-input" placeholder="Send a message">
+                        <button style="background-color: 7392D1; padding: 3px;" id="send-button">
+                        <i style="font-size: x-large;" class="fas fa-paper-plane">➡️</i>
+                    </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
