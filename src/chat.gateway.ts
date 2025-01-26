@@ -2,7 +2,7 @@ import { Server, Socket } from 'socket.io';
 import { WebSocketGateway, SubscribeMessage, MessageBody, ConnectedSocket, OnGatewayConnection, OnGatewayDisconnect } from '@nestjs/websockets';
 import { ChatService } from './chat/chat.service';
 
-@WebSocketGateway(7000, { cors: { origin: '*' } })
+@WebSocketGateway({ cors: { origin: '*' } })
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
   constructor(private readonly chatService: ChatService) {}
 
