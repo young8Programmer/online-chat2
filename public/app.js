@@ -1,4 +1,4 @@
-const socket = io("http://192.168.226.150:7000");
+const socket = io("https://online-chat2-dp1e.onrender.com");
 
 let name = prompt("Ismingizni kiriting");
 let password;
