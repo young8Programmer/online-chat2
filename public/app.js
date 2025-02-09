@@ -1,4 +1,4 @@
-const socket = io("https://online-chat2-dp1e.onrender.com");
+const socket = io("https://online-chat2-production.up.railway.app/");
 
 let name = prompt("Ismingizni kiriting");
 let password;
