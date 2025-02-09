@@ -8,7 +8,7 @@ import { join } from 'path';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_URL || "postgresql://postgresql_9eoz_user:Xp2A37RfR5ypHiWckZY6GsOohzndOCnm@dpg-cu6iq1dsvqrc738j18c0-a.oregon-postgres.render.com/postgresql_9eoz",
+      url: "postgresql://postgres:GufBxEipUYYmAZrIRRZzuzGnHlIUcLis@autorack.proxy.rlwy.net:27915/railway",
       autoLoadEntities: true,
       synchronize: true,
       ssl: {
