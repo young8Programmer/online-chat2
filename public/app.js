@@ -4,7 +4,7 @@ let name = prompt("Ismingizni kiriting");
 let password;
 do {
     password = prompt("Saytga kirish uchun parolni kiriting:");
-} while (password !== "09162003");
+} while (password !== "336699");
 
 let chatMessages = document.querySelector(".chat-messages");
 let messageForm = document.querySelector(".message-form");
